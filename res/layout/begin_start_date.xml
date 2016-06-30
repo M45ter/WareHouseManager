@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/common_tv_style"
+            android:text="@string/order_record_start_date" />
+
+        <TextView
+            android:id="@+id/start_date_tv"
+            style="@style/common_tv_style"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5dp"
+            android:drawableRight="@drawable/date"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_5dp"
+            android:textColor="@color/common_font" />
+
+        <TextView
+            android:id="@+id/tv_start_today"
+            style="@style/small_padding_tv_style"
+            android:text="@string/today" />
+
+        <TextView
+            android:id="@+id/tv_start_clear"
+            style="@style/small_padding_tv_style"
+            android:paddingRight="@dimen/_15dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+    <View style="@style/common_view_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/common_tv_style"
+            android:text="@string/order_record_end_date" />
+
+        <TextView
+            android:id="@+id/end_date_tv"
+            style="@style/common_tv_style"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_5dp"
+            android:drawableRight="@drawable/date"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_5dp"
+            android:textColor="@color/common_font" />
+
+        <TextView
+            android:id="@+id/tv_end_today"
+            style="@style/small_padding_tv_style"
+            android:text="@string/today" />
+
+        <TextView
+            android:id="@+id/tv_end_clear"
+            style="@style/small_padding_tv_style"
+            android:paddingRight="@dimen/_15dp"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>
